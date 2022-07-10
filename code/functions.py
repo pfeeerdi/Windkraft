@@ -91,7 +91,7 @@ def getDistancesAndWind(point):
     return a
 
 
-# In[ ]:
+# In[9]:
 
 
 def getBenachbarteTags(point):
@@ -113,7 +113,7 @@ def getBenachbarteTags(point):
     return features
 
 
-# In[ ]:
+# In[10]:
 
 
 def getUnmschließendeTags(point):
@@ -264,7 +264,7 @@ df["umschließendeTags"] = umschließendeTags
 df["benachbarteTags"] = benachbarteTags
 df["distanceAndWind"] = distanceAndWind
 df.to_csv("prepWindKraft.csv", index=False)
-df1["Label"] = [True for x in range(len(df1))]
+df["Label"] = [True for x in range(len(df1))]
 df.to_csv("prepWindKraftLabel.csv", index=False)
 
 
@@ -310,7 +310,7 @@ def split_processing(items, num_splits=20):
     for t in threads:                                                           
         t.join()  
 
-split_processing(NoWinkraftPoints)
+split_processing(NoWinkraftPoints[:100])
 
 
 # In[ ]:
@@ -322,7 +322,13 @@ df1["loc"] = NoWinkraftPoints
 df1["umschließendeTags"] = umschließendeTags1
 df1["benachbarteTags"] = benachbarteTags1
 df1["distanceAndWind"] = distanceAndWind1
-df.to_csv("prepNoWindKraft.csv", index=False)
+df1.to_csv("prepNoWindKraft.csv", index=False)
 df1["Label"] = [False for x in range(len(df1))]
-df.to_csv("prepNoWindKraftLabel.csv", index=False)
+df1.to_csv("prepNoWindKraftLabel.csv", index=False)
+
+
+# In[ ]:
+
+
+
 
