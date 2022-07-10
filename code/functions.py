@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[ ]:
 
 
 import os
@@ -15,14 +15,14 @@ import math
 import threading                                                                
 
 
-# In[2]:
+# In[ ]:
 
 
 def distance(point1, point2):
     return ((point1[0]-point2[0])**2+(point1[1]-point2[1])**2)**0.5
 
 
-# In[3]:
+# In[ ]:
 
 
 def getSDOs(df):
@@ -31,7 +31,7 @@ def getSDOs(df):
     return SDOs
 
 
-# In[4]:
+# In[ ]:
 
 
 def getPointBySDO_ID(df, SDO_ID):
@@ -40,7 +40,7 @@ def getPointBySDO_ID(df, SDO_ID):
     return point[0]
 
 
-# In[5]:
+# In[ ]:
 
 
 def getSDODF():
@@ -55,7 +55,7 @@ def getSDODF():
     return df
 
 
-# In[6]:
+# In[ ]:
 
 
 def getWindDF():
@@ -65,7 +65,7 @@ def getWindDF():
     return df
 
 
-# In[7]:
+# In[ ]:
 
 
 def loadWindBySDO_ID(dfWind, SDO_ID):
@@ -74,7 +74,7 @@ def loadWindBySDO_ID(dfWind, SDO_ID):
     return gf.get_group(SDO_ID).Wert.mean()
 
 
-# In[8]:
+# In[ ]:
 
 
 def getDistancesAndWind(point):
@@ -91,7 +91,7 @@ def getDistancesAndWind(point):
     return a
 
 
-# In[9]:
+# In[ ]:
 
 
 def getBenachbarteTags(point):
@@ -113,7 +113,7 @@ def getBenachbarteTags(point):
     return features
 
 
-# In[10]:
+# In[ ]:
 
 
 def getUnmschließendeTags(point):
@@ -135,7 +135,7 @@ def getUnmschließendeTags(point):
     return features
 
 
-# In[11]:
+# In[ ]:
 
 
 P = pyproj.Proj(proj='utm', zone=31, ellps='WGS84', preserve_units=True)
@@ -148,7 +148,7 @@ def XY_To_LatLon(x,y):
     return P(x,y,inverse=True)   
 
 
-# In[12]:
+# In[ ]:
 
 
 def PointInPoly(point, geojsonPath):
@@ -159,7 +159,7 @@ def PointInPoly(point, geojsonPath):
     return False 
 
 
-# In[13]:
+# In[ ]:
 
 
 def PointInSchutzgebiet(a):
@@ -176,7 +176,7 @@ def PointInSchutzgebiet(a):
     return res      
 
 
-# In[14]:
+# In[ ]:
 
 
 def getWinkraftPoints():
@@ -189,7 +189,7 @@ def getWinkraftPoints():
     return WinkraftPoints
 
 
-# In[15]:
+# In[ ]:
 
 
 def getNoWindkraftPoints():
@@ -203,13 +203,13 @@ def getNoWindkraftPoints():
 
 # # WindkraftPoints
 
-# In[16]:
+# In[ ]:
 
 
 WinkraftPoints = getWinkraftPoints()
 
 
-# In[17]:
+# In[ ]:
 
 
 #Naturmonumente, Nationalparke, Vogelschutzgebiet, Landschaftsschutzgebiete, Naturschutzgebiete, Biosphaerenreservate
@@ -273,7 +273,7 @@ df.to_csv("prepWindKraftLabel.csv", index=False)
 # In[ ]:
 
 
-NoWinkraftPoints = getNoWindkraftPoints()#[:100]
+NoWinkraftPoints = getNoWindkraftPoints()#[:10]
 
 #Naturmonumente, Nationalparke, Vogelschutzgebiet, Landschaftsschutzgebiete, Naturschutzgebiete, Biosphaerenreservate
 #columns = ["Naturmonumente", "Nationalparke", "Vogelschutzgebiet", "Landschaftsschutzgebiete", "Naturschutzgebiete", "Biosphaerenreservate"]
@@ -286,8 +286,8 @@ umschließendeTags1 = []
 benachbarteTags1 = []
 distanceAndWind1 = []
 
-def process(WinkraftPoints, start, end):
-    for point in WinkraftPoints[start:end]:
+def process(NoWinkraftPoints, start, end):
+    for point in NoWinkraftPoints[start:end]:
         distanceAndWind1.append(getDistancesAndWind(point))
         umschließendeTags1.append(getUnmschließendeTags(point))
         benachbarteTags1.append(getBenachbarteTags(point))
@@ -325,10 +325,4 @@ df1["distanceAndWind"] = distanceAndWind1
 df1.to_csv("prepNoWindKraft.csv", index=False)
 df1["Label"] = [False for x in range(len(df1))]
 df1.to_csv("prepNoWindKraftLabel.csv", index=False)
-
-
-# In[ ]:
-
-
-
 
