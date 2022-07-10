@@ -12,6 +12,7 @@ import fiona
 from shapely.geometry import shape, mapping, Point, Polygon, MultiPolygon
 import pyproj
 import math
+import threading                                                                
 
 
 # In[2]:
@@ -73,7 +74,7 @@ def loadWindBySDO_ID(dfWind, SDO_ID):
     return gf.get_group(SDO_ID).Wert.mean()
 
 
-# In[ ]:
+# In[8]:
 
 
 def getDistancesAndWind(point):
@@ -90,7 +91,7 @@ def getDistancesAndWind(point):
     return a
 
 
-# In[9]:
+# In[ ]:
 
 
 def getBenachbarteTags(point):
@@ -98,18 +99,21 @@ def getBenachbarteTags(point):
     #benachbarte Objekte
     data = f"data=%5Btimeout%3A10%5D%5Bout%3Ajson%5D%3B(node(around%3A50%2C{x}%2C{y})%3Bway(around%3A50%2C{x}%2C{y})%3B)%3Bout+tags+geom({x-0.0057}%2C{y-0.0057}%2C{x+0.0057}%2C{y+0.0057})%3Brelation(around%3A50%2C{x}%2C{y})%3Bout+geom({x-0.0057}%2C{y-0.0057}%2C{x+0.0057}%2C{y+0.0057})%3B"
     response = requests.post('https://query.openstreetmap.org/query-features', data=data)
-    res = json.loads(response.text)
-    features = {}
-    #return res
-    for entry in res["elements"]:
-        a = entry.get("tags")
-        if a:
-            for key, value in a.items():
-                features.update({key:value})
+    try:
+        res = json.loads(response.text)
+        features = {}
+        #return res
+        for entry in res["elements"]:
+            a = entry.get("tags")
+            if a:
+                for key, value in a.items():
+                    features.update({key:value})
+    except:
+        return None
     return features
 
 
-# In[10]:
+# In[ ]:
 
 
 def getUnmschließendeTags(point):
@@ -117,14 +121,17 @@ def getUnmschließendeTags(point):
     #unmschließendes Objekte
     data = f"data=%5Btimeout%3A10%5D%5Bout%3Ajson%5D%3Bis_in({x}%2C{y})-%3E.a%3Bway(pivot.a)%3Bout+tags+bb%3Bout+ids+geom({x}%2C{y}%2C{x}%2C{y})%3Brelation(pivot.a)%3Bout+tags+bb%3B"
     response = requests.post('https://query.openstreetmap.org/query-features', data=data)
-    res = json.loads(response.text)
-    features = {}
-    #return res
-    for entry in res["elements"]:
-        a = entry.get("tags")
-        if a:
-            for key, value in a.items():
-                features.update({key:value})
+    try:
+        res = json.loads(response.text)
+        features = {}
+        #return res
+        for entry in res["elements"]:
+            a = entry.get("tags")
+            if a:
+                for key, value in a.items():
+                    features.update({key:value})
+    except:
+        return None 
     return features
 
 
@@ -152,7 +159,7 @@ def PointInPoly(point, geojsonPath):
     return False 
 
 
-# In[27]:
+# In[13]:
 
 
 def PointInSchutzgebiet(a):
@@ -182,7 +189,7 @@ def getWinkraftPoints():
     return WinkraftPoints
 
 
-# In[ ]:
+# In[15]:
 
 
 def getNoWindkraftPoints():
@@ -196,54 +203,114 @@ def getNoWindkraftPoints():
 
 # # WindkraftPoints
 
-# In[19]:
+# In[16]:
 
 
 WinkraftPoints = getWinkraftPoints()
-# In[ ]:
+
+
+# In[17]:
+
+
 #Naturmonumente, Nationalparke, Vogelschutzgebiet, Landschaftsschutzgebiete, Naturschutzgebiete, Biosphaerenreservate
-columns = ["Naturmonumente", "Nationalparke", "Vogelschutzgebiet", "Landschaftsschutzgebiete", "Naturschutzgebiete", "Biosphaerenreservate"]
-inSchutzGebiet = []
-for point in WinkraftPoints:
-    inSchutzGebiet.append(PointInSchutzgebiet(point))
+#columns = ["Naturmonumente", "Nationalparke", "Vogelschutzgebiet", "Landschaftsschutzgebiete", "Naturschutzgebiete", "Biosphaerenreservate"]
+
+#inSchutzGebiet = []
+#for point in WinkraftPoints:
+#    inSchutzGebiet.append(PointInSchutzgebiet(point))
+
+
 # In[ ]:
+
+
 umschließendeTags = []
 benachbarteTags = []
-for point in WinkraftPoints:
-    umschließendeTags.append(getUnmschließendeTags(point))
-    benachbarteTags.append(getBenachbarteTags(point))
-# In[ ]:
 distanceAndWind = []
-for point in WinkraftPoints:
-    distanceAndWind.append(getDistancesAndWind(point))
-# In[22]:
+
+def process(WinkraftPoints, start, end):
+    for point in WinkraftPoints[start:end]:
+        umschließendeTags.append(getUnmschließendeTags(point))
+        benachbarteTags.append(getBenachbarteTags(point))     
+        distanceAndWind.append(getDistancesAndWind(point))
+        print("Done")
+        
+def split_processing(items, num_splits=20):                                      
+    split_size = len(items) // num_splits                                       
+    threads = []                                                                
+    for i in range(num_splits):                                                 
+        # determine the indices of the list this thread will handle             
+        start = i * split_size                                                  
+        # special case on the last chunk to account for uneven splits           
+        end = None if i+1 == num_splits else (i+1) * split_size                 
+        # create the thread                                                     
+        threads.append(                                                         
+            threading.Thread(target=process, args=(items, start, end)))         
+        threads[-1].start() # start the thread we just created                  
+
+    # wait for all threads to finish                                            
+    for t in threads:                                                           
+        t.join()  
+
+split_processing(WinkraftPoints)
+
+
+# In[ ]:
+
+
 df = pd.DataFrame()
 df["loc"] = WinkraftPoints
-df["schutzgebiete"] = inSchutzGebiet
+#df["schutzgebiete"] = inSchutzGebiet
 df["umschließendeTags"] = umschließendeTags
 df["benachbarteTags"] = benachbarteTags
 df["distanceAndWind"] = distanceAndWind
 df.to_csv("prepWindKraft.csv", index=False)
+df1["Label"] = [True for x in range(len(df1))]
+df.to_csv("prepWindKraftLabel.csv", index=False)
 
-# # NO WindkraftPoint
+
+# # NO WindkraftPoints
+
 # In[ ]:
+
+
 NoWinkraftPoints = getNoWindkraftPoints()
 
 #Naturmonumente, Nationalparke, Vogelschutzgebiet, Landschaftsschutzgebiete, Naturschutzgebiete, Biosphaerenreservate
-columns = ["Naturmonumente", "Nationalparke", "Vogelschutzgebiet", "Landschaftsschutzgebiete", "Naturschutzgebiete", "Biosphaerenreservate"]
-inSchutzGebiet1 = []
-for point in NoWinkraftPoints:
-    inSchutzGebiet1.append(PointInSchutzgebiet(point))
+#columns = ["Naturmonumente", "Nationalparke", "Vogelschutzgebiet", "Landschaftsschutzgebiete", "Naturschutzgebiete", "Biosphaerenreservate"]
+
+#inSchutzGebiet1 = []
+#for point in NoWinkraftPoints:
+#    inSchutzGebiet1.append(PointInSchutzgebiet(point))
     
 umschließendeTags1 = []
 benachbarteTags1 = []
-for point in NoWinkraftPoints:
-    umschließendeTags1.append(getUnmschließendeTags(point))
-    benachbarteTags1.append(getBenachbarteTags(point))
-    
 distanceAndWind1 = []
-for point in NoWinkraftPoints:
-    distanceAndWind1.append(getDistancesAndWind(point))
+
+def process(WinkraftPoints, start, end):
+    for point in WinkraftPoints[start:end]:
+        distanceAndWind1.append(getDistancesAndWind(point))
+        umschließendeTags1.append(getUnmschließendeTags(point))
+        benachbarteTags1.append(getBenachbarteTags(point))
+        print("Done")
+        
+def split_processing(items, num_splits=20):                                      
+    split_size = len(items) // num_splits                                       
+    threads = []                                                                
+    for i in range(num_splits):                                                 
+        # determine the indices of the list this thread will handle             
+        start = i * split_size                                                  
+        # special case on the last chunk to account for uneven splits           
+        end = None if i+1 == num_splits else (i+1) * split_size                 
+        # create the thread                                                     
+        threads.append(                                                         
+            threading.Thread(target=process, args=(items, start, end)))         
+        threads[-1].start() # start the thread we just created                  
+
+    # wait for all threads to finish                                            
+    for t in threads:                                                           
+        t.join()  
+
+split_processing(NoWinkraftPoints)
 
 
 # In[ ]:
@@ -251,10 +318,11 @@ for point in NoWinkraftPoints:
 
 df1 = pd.DataFrame()
 df1["loc"] = NoWinkraftPoints
-df1["schutzgebiete"] = inSchutzGebiet1
+#df1["schutzgebiete"] = inSchutzGebiet1
 df1["umschließendeTags"] = umschließendeTags1
 df1["benachbarteTags"] = benachbarteTags1
 df1["distanceAndWind"] = distanceAndWind1
-
 df.to_csv("prepNoWindKraft.csv", index=False)
+df1["Label"] = [False for x in range(len(df1))]
+df.to_csv("prepNoWindKraftLabel.csv", index=False)
 
