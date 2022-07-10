@@ -110,7 +110,7 @@ def getBenachbarteTags(point):
                     features.update({key:value})
     except:
         return None
-    return features
+    return json.dumps(features)
 
 
 # In[ ]:
@@ -132,7 +132,7 @@ def getUnmschließendeTags(point):
                     features.update({key:value})
     except:
         return None 
-    return features
+    return json.dumps(features)
 
 
 # In[ ]:
