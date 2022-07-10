@@ -227,31 +227,11 @@ umschließendeTags = []
 benachbarteTags = []
 distanceAndWind = []
 
-def process(WinkraftPoints, start, end):
-    for point in WinkraftPoints[start:end]:
-        umschließendeTags.append(getUnmschließendeTags(point))
-        benachbarteTags.append(getBenachbarteTags(point))     
-        distanceAndWind.append(getDistancesAndWind(point))
-        print("Done")
-        
-def split_processing(items, num_splits=20):                                      
-    split_size = len(items) // num_splits                                       
-    threads = []                                                                
-    for i in range(num_splits):                                                 
-        # determine the indices of the list this thread will handle             
-        start = i * split_size                                                  
-        # special case on the last chunk to account for uneven splits           
-        end = None if i+1 == num_splits else (i+1) * split_size                 
-        # create the thread                                                     
-        threads.append(                                                         
-            threading.Thread(target=process, args=(items, start, end)))         
-        threads[-1].start() # start the thread we just created                  
-
-    # wait for all threads to finish                                            
-    for t in threads:                                                           
-        t.join()  
-
-split_processing(WinkraftPoints)
+for point in WinkraftPoints:
+    umschließendeTags.append(getUnmschließendeTags(point))
+    benachbarteTags.append(getBenachbarteTags(point))     
+    distanceAndWind.append(getDistancesAndWind(point))
+    print("Done")
 
 
 # In[ ]:
@@ -264,7 +244,7 @@ df["umschließendeTags"] = umschließendeTags
 df["benachbarteTags"] = benachbarteTags
 df["distanceAndWind"] = distanceAndWind
 df.to_csv("prepWindKraft.csv", index=False)
-df["Label"] = [True for x in range(len(df1))]
+df["Label"] = [True for x in range(len(df))]
 df.to_csv("prepWindKraftLabel.csv", index=False)
 
 
@@ -286,31 +266,11 @@ umschließendeTags1 = []
 benachbarteTags1 = []
 distanceAndWind1 = []
 
-def process(NoWinkraftPoints, start, end):
-    for point in NoWinkraftPoints[start:end]:
-        distanceAndWind1.append(getDistancesAndWind(point))
-        umschließendeTags1.append(getUnmschließendeTags(point))
-        benachbarteTags1.append(getBenachbarteTags(point))
-        print("Done")
-        
-def split_processing(items, num_splits=20):                                      
-    split_size = len(items) // num_splits                                       
-    threads = []                                                                
-    for i in range(num_splits):                                                 
-        # determine the indices of the list this thread will handle             
-        start = i * split_size                                                  
-        # special case on the last chunk to account for uneven splits           
-        end = None if i+1 == num_splits else (i+1) * split_size                 
-        # create the thread                                                     
-        threads.append(                                                         
-            threading.Thread(target=process, args=(items, start, end)))         
-        threads[-1].start() # start the thread we just created                  
-
-    # wait for all threads to finish                                            
-    for t in threads:                                                           
-        t.join()  
-
-split_processing(NoWinkraftPoints)
+for point in NoWinkraftPoints:
+    distanceAndWind1.append(getDistancesAndWind(point))
+    umschließendeTags1.append(getUnmschließendeTags(point))
+    benachbarteTags1.append(getBenachbarteTags(point))
+    print("Done")
 
 
 # In[ ]:
