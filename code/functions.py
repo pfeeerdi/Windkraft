@@ -273,7 +273,7 @@ df.to_csv("prepWindKraftLabel.csv", index=False)
 # In[ ]:
 
 
-NoWinkraftPoints = getNoWindkraftPoints()
+NoWinkraftPoints = getNoWindkraftPoints()#[:100]
 
 #Naturmonumente, Nationalparke, Vogelschutzgebiet, Landschaftsschutzgebiete, Naturschutzgebiete, Biosphaerenreservate
 #columns = ["Naturmonumente", "Nationalparke", "Vogelschutzgebiet", "Landschaftsschutzgebiete", "Naturschutzgebiete", "Biosphaerenreservate"]
@@ -310,7 +310,7 @@ def split_processing(items, num_splits=20):
     for t in threads:                                                           
         t.join()  
 
-split_processing(NoWinkraftPoints[:100])
+split_processing(NoWinkraftPoints)
 
 
 # In[ ]:
