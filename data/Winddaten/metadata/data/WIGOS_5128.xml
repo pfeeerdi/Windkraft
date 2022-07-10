@@ -1,0 +1,757 @@
+<?xml version="1.0"?>
+<go:station xmlns:go="http://meteoswiss.ch/oscar/xsd/go" xmlns:wmdscl="http://meteoswiss.ch/oscar/xsd/wmdscl" xmlns:gocl="http://meteoswiss.ch/oscar/xsd/gocl" xmlns:dwdcdc="http://dwd.de/cdc/xsd/mesa">
+  <go:StationInfo>
+    <go:StationID>812300698791</go:StationID>
+    <go:wigosID>0-20000-0-5128</go:wigosID>
+    <go:stationName>Tuttlingen-Möhringen-Vorstadt</go:stationName>
+    <go:stationLongitude>8.789874</go:stationLongitude>
+    <go:stationLatitude>47.968152</go:stationLatitude>
+    <go:stationElevation>668</go:stationElevation>
+    <wmdscl:siteInformation/>
+    <wmdscl:country>3-02-68</wmdscl:country>
+    <wmdscl:wmoRegion>3-01- TODO</wmdscl:wmoRegion>
+    <wmdscl:dateEstablished>1979-06-01T00:00:00</wmdscl:dateEstablished>
+    <wmdscl:dateClosed>...</wmdscl:dateClosed>
+  </go:StationInfo>
+  <wmdscl:event>
+    <wmdscl:eventInfo>
+      <gocl:modDTFrom>1979-06-01T00:00:00</gocl:modDTFrom>
+      <gocl:modDTUntil>1990-12-31T00:00:00</gocl:modDTUntil>
+      <go:stationLatitude>47.954995</go:stationLatitude>
+      <go:stationLongitude>8.756656</go:stationLongitude>
+      <go:stationElevation>675</go:stationElevation>
+      <wmdscl:siteInformation>Am Westrand des Dorfes auf einer Wiese am Friedhof.</wmdscl:siteInformation>
+    </wmdscl:eventInfo>
+    <wmdscl:eventInfo>
+      <gocl:modDTFrom>1991-02-01T00:00:00</gocl:modDTFrom>
+      <gocl:modDTUntil>1997-03-31T00:00:00</gocl:modDTUntil>
+      <go:stationLatitude>47.95606</go:stationLatitude>
+      <go:stationLongitude>8.757441</go:stationLongitude>
+      <go:stationElevation>670</go:stationElevation>
+      <wmdscl:siteInformation>Am Westende von Möhringen im Garten des Nachbars, aufgelockertes Neubaugebiet.</wmdscl:siteInformation>
+    </wmdscl:eventInfo>
+    <wmdscl:eventInfo>
+      <gocl:modDTFrom>2018-02-13T00:00:00</gocl:modDTFrom>
+      <gocl:modDTUntil>2022-06-06T00:00:00</gocl:modDTUntil>
+      <go:stationLatitude>47.968211</go:stationLatitude>
+      <go:stationLongitude>8.789943</go:stationLongitude>
+      <go:stationElevation>668</go:stationElevation>
+      <wmdscl:siteInformation>Im Wohngebiet des Stadtteils Möhringen-Vorstadt.</wmdscl:siteInformation>
+    </wmdscl:eventInfo>
+    <wmdscl:eventInfo>
+      <gocl:modDTFrom>2022-06-07T00:00:00</gocl:modDTFrom>
+      <gocl:modDTUntil>...</gocl:modDTUntil>
+      <go:stationLatitude>47.968152</go:stationLatitude>
+      <go:stationLongitude>8.789874</go:stationLongitude>
+      <go:stationElevation>667.5</go:stationElevation>
+      <wmdscl:siteInformation>Im Wohngebiet des Stadtteils Möhringen-Vorstadt.</wmdscl:siteInformation>
+    </wmdscl:eventInfo>
+  </wmdscl:event>
+  <go:observation>
+    <go:observationInfo>
+      <wmdscl:observedVariable>
+        <wmdscl:observedVariableInfo>etc.<gocl:instrument/>
+          <wmdscl:dataProcessingAndReporting>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300583054</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1Y_VP: Jahresmittel der Stationsmessungen des Dampfdrucks in hPa</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1982-01-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-01-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Jahr</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300304206</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1M_T5CM_N: Monatsmittel der Stationsmessungen des Tagesminimums der Lufttemperatur am Erdboden in 5 cm  Höhe in °C</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-10-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Monat</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300321038</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>MO_NSHK_MN004: Monatssumme der Stationsmessungen der Neuschneehöhe in cm</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Summe</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Monat</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300170702</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1M_VP: Monatsmittel der Stationsmessungen des Dampfdrucks in hPa</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Monat</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300960462</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1M_T2M_X: Monatsmittel der Stationsmessungen des Tagesmaximums der Lufttemperatur in 2 m Höhe in °C</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Monat</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300639822</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1M_N: Monatsmittel der Stationsmessungen des Bedeckungsgrades in Achtel</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Monat</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300820110</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1Y_T2M_X: Jahresmittel der Stationsmessungen des Tagesmaximums der Lufttemperatur in 2 m Höhe in °C</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1982-01-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-01-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Jahr</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300412750</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1D_VP: Tägliche Stationsmessungen des mittleren Dampfdrucks in hPa</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-31T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Tag</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300763342</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1Y_SH-N: Jahressumme der Stationsmessungen der Neuschneehöhe in cm</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1982-01-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2021-01-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Summe</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Jahr</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300913678</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1D_RR-F: Tägliche Stationsbeobachtungen der Niederschlagsform</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2022-06-28T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Summe</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>24 Stunden</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300758350</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1M_SH-N: Monatssumme der Stationsmessungen der Neuschneehöhe in cm</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2022-05-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Summe</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Monat</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300659790</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1D_T5CM_N: Tägliche Stationsmessungen des Minimums der Lufttemperatur am Erdboden in 5 cm Höhe in °C</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-10-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-31T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Minimum</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Tag</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>327800546667</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1Y_N: Jahresmittel der Stationsmessungen des Bedeckungsgrades in Achtel</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1982-01-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-01-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Jahr</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300531278</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1D_N: Tägliche Stationsmessungen des mittleren Bedeckungsgrades in Achtel</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-31T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Tag</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300526286</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1Y_T5CM_N: Jahresmittel der Stationsmessungen des Tagesminimums der Lufttemperatur am Erdboden in 5 cm Höhe in °C</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1982-01-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-01-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Jahr</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300896846</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>RSKF_MN004: Tägliche Stationsmessungen der Form des Niederschlags</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-31T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Summe</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>24 Stunden</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>2532461327</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1D_SH-N: Tägliche Stationsmessungen der Tagessumme der Neuschneehöhe in cm</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T07:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2022-06-28T06:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Summe</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>24 Stunden</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300866894</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1M_T2M_N: Monatsmittel der Stationsmessungen des Tagesminimums der Lufttemperatur in 2 m Höhe in °C</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Monat</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300644814</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1Y_T2M_N: Jahresmittel der Stationsmessungen des Tagesminimums der Lufttemperatur in 2 m Höhe in °C</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1982-01-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-01-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Jahr</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+          </wmdscl:dataProcessingAndReporting>
+        </wmdscl:observedVariableInfo>
+        <wmdscl:observedVariableInfo>Feuchte<gocl:instrument/>
+          <wmdscl:dataProcessingAndReporting>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300933646</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1M_RF: Monatsmittel der Stationsmessungen der relativen Feuchte in 2 m Höhe in %</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Monat</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300118926</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1D_RF: Tagesmittel der relativen Feuchte in 2 m Höhe in %</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-31T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Tag</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300701582</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1Y_RF: Jahresmittel der Stationsmessungen der relativen Feuchte in 2 m Höhe in %</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1982-01-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-01-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Jahr</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+          </wmdscl:dataProcessingAndReporting>
+        </wmdscl:observedVariableInfo>
+        <wmdscl:observedVariableInfo>Niederschlag<gocl:instrument>
+            <gocl:instrumentInfo>
+              <gocl:instrumentModel>Hellmann</gocl:instrumentModel>
+              <gocl:observingMethod>Niederschlagsmenge, konv.</gocl:observingMethod>
+              <gocl:distanceFromReferenceSurface>1.5</gocl:distanceFromReferenceSurface>
+              <gocl:modDTFrom>2018-03-01T00:00:00</gocl:modDTFrom>
+              <gocl:modDTUntil>...</gocl:modDTUntil>
+            </gocl:instrumentInfo>
+            <gocl:instrumentInfo>
+              <gocl:instrumentModel>Hellmann</gocl:instrumentModel>
+              <gocl:observingMethod>Niederschlagsmenge, konv.</gocl:observingMethod>
+              <gocl:distanceFromReferenceSurface>1</gocl:distanceFromReferenceSurface>
+              <gocl:modDTFrom>1991-02-01T00:00:00</gocl:modDTFrom>
+              <gocl:modDTUntil>1997-03-31T00:00:00</gocl:modDTUntil>
+            </gocl:instrumentInfo>
+            <gocl:instrumentInfo>
+              <gocl:instrumentModel>Hellmann</gocl:instrumentModel>
+              <gocl:observingMethod>Niederschlagsmenge, konv.</gocl:observingMethod>
+              <gocl:distanceFromReferenceSurface>1.3</gocl:distanceFromReferenceSurface>
+              <gocl:modDTFrom>1981-06-01T00:00:00</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-31T00:00:00</gocl:modDTUntil>
+            </gocl:instrumentInfo>
+            <gocl:instrumentInfo>
+              <gocl:instrumentModel>Schneepegel</gocl:instrumentModel>
+              <gocl:observingMethod>Schneehöhenmessung, manuell</gocl:observingMethod>
+              <gocl:modDTFrom>2018-03-01T00:00:00</gocl:modDTFrom>
+              <gocl:modDTUntil>...</gocl:modDTUntil>
+            </gocl:instrumentInfo>
+            <gocl:instrumentInfo>
+              <gocl:instrumentModel>Schneepegel</gocl:instrumentModel>
+              <gocl:observingMethod>Schneehöhenmessung, manuell</gocl:observingMethod>
+              <gocl:modDTFrom>1991-02-01T00:00:00</gocl:modDTFrom>
+              <gocl:modDTUntil>1997-03-31T00:00:00</gocl:modDTUntil>
+            </gocl:instrumentInfo>
+            <gocl:instrumentInfo>
+              <gocl:instrumentModel>Schneepegel</gocl:instrumentModel>
+              <gocl:observingMethod>Schneehöhenmessung, manuell</gocl:observingMethod>
+              <gocl:modDTFrom>1981-06-01T00:00:00</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-31T00:00:00</gocl:modDTUntil>
+            </gocl:instrumentInfo>
+          </gocl:instrument>
+          <wmdscl:dataProcessingAndReporting>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300603022</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>SHK_TAG_MN004: Tägliche Stationsmessungen der Schneehöhe in cm</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T07:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-30T07:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Instantan:Instantan oder Messwert für den das Zeitintervall nicht weiter aufgelöst werden kann</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Tag</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300052174</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>MO_SH_MN004: Monatsmittel der Stationsmessungen der Schneehöhe in cm</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Monat</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300345998</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1M_RR: Monatssumme der Stationsmessungen der Niederschlagshöhe in mm</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2022-05-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Summe</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Monat</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300995406</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>JA_SH_MN004: Jahresmittel der Stationsmessungen der Schneehöhe in cm</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1982-01-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-01-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Jahr</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300614862</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>MO_SHK_MN004: Monatssumme der Stationsmessungen der Schneehöhe in cm</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Summe</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Monat</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300372814</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1Y_SH_S: Jahressumme der Stationsmessungen der Schneehöhe in cm</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1982-01-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2021-01-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Summe</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Jahr</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300284238</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>SH_MN008: Terminwerte der Stationsmessungen der Schneehöhe in cm</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>2018-03-01T06:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2022-06-28T06:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Instantan:Instantan oder Messwert für den das Zeitintervall nicht weiter aufgelöst werden kann</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Stunde</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300876878</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1M_SH_S: Monatssumme der Stationsmessungen der Schneehöhe in cm</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2022-05-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Summe</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Monat</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300207502</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1D_RR: Tägliche Stationsmessungen Niederschlagshöhe in mm</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2022-06-28T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Summe</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Tag</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300666638</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1Y_RR: Jahressumme der Stationsmessungen der Niederschlagshöhe in mm</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1982-01-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2021-01-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Summe</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Jahr</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300190670</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>RSK_MN004: Tägliche Stationsmessungen der Niederschlagshöhe in mm</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-31T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Summe</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Tag</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300309198</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1D_SH: Tägliche Stationsmessungen der Schneehöhe in cm</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T07:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2022-06-28T06:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Tag</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+          </wmdscl:dataProcessingAndReporting>
+        </wmdscl:observedVariableInfo>
+        <wmdscl:observedVariableInfo>Strahlung<gocl:instrument>
+            <gocl:instrumentInfo>
+              <gocl:instrumentModel>Sonnenscheinschreiber nach Campbell-Stokes</gocl:instrumentModel>
+              <gocl:observingMethod>Sonnenscheinregistrierung, konv.</gocl:observingMethod>
+              <gocl:distanceFromReferenceSurface>5.5</gocl:distanceFromReferenceSurface>
+              <gocl:modDTFrom>1979-06-01T00:00:00</gocl:modDTFrom>
+              <gocl:modDTUntil>1988-11-30T00:00:00</gocl:modDTUntil>
+            </gocl:instrumentInfo>
+          </gocl:instrument>
+          <wmdscl:dataProcessingAndReporting>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300918670</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1D_SD: Tägliche Stationsmessungen der Sonnenscheindauer in Stunden</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-31T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Summe</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Tag</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300691598</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1M_SD: Monatsmittel der Stationsmessungen der Sonnenscheindauer in Stunden</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Monat</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300778318</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_PT1H_SD: Stündliche Stationsmessungen der Sonnenscheindauer in Minuten</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T03:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1988-11-30T20:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Summe</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Stunde</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300083982</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>SD_MN007: Tägliche Stationsdaten Strahlung und Sonnenscheindauer in Stunden</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1988-11-30T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Summe</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Tag</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300232462</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1Y_SD: Jahresmittel der Stationsmessungen der Sonnenscheindauer in Stunden</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1982-01-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1987-01-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Jahr</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300397774</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1M_SD_S: Monatssumme der Stationsmessungen der Sonnenscheindauer in Stunden</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Summe</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Monat</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300113934</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1Y_SD_S: Jahressumme der Stationsmessungen der Sonnenscheindauer in Stunden</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1982-01-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1987-01-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Summe</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Jahr</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+          </wmdscl:dataProcessingAndReporting>
+        </wmdscl:observedVariableInfo>
+        <wmdscl:observedVariableInfo>Temperatur (Luft)<gocl:instrument>
+            <gocl:instrumentInfo>
+              <gocl:instrumentModel>Minimumthermometer</gocl:instrumentModel>
+              <gocl:observingMethod>Temperaturmessung, konv.</gocl:observingMethod>
+              <gocl:distanceFromReferenceSurface>2.2</gocl:distanceFromReferenceSurface>
+              <gocl:modDTFrom>1979-06-01T00:00:00</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-31T00:00:00</gocl:modDTUntil>
+            </gocl:instrumentInfo>
+            <gocl:instrumentInfo>
+              <gocl:instrumentModel>Maximumthermometer</gocl:instrumentModel>
+              <gocl:observingMethod>Temperaturmessung, konv.</gocl:observingMethod>
+              <gocl:distanceFromReferenceSurface>2.2</gocl:distanceFromReferenceSurface>
+              <gocl:modDTFrom>1979-06-01T00:00:00</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-31T00:00:00</gocl:modDTUntil>
+            </gocl:instrumentInfo>
+            <gocl:instrumentInfo>
+              <gocl:instrumentModel>Minimumthermometer</gocl:instrumentModel>
+              <gocl:observingMethod>Temperaturmessung, konv.</gocl:observingMethod>
+              <gocl:distanceFromReferenceSurface>.05</gocl:distanceFromReferenceSurface>
+              <gocl:modDTFrom>1981-10-01T00:00:00</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-31T00:00:00</gocl:modDTUntil>
+            </gocl:instrumentInfo>
+          </gocl:instrument>
+          <wmdscl:dataProcessingAndReporting>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300624846</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1M_T2M: Monatsmittel der Stationsmessungen der Lufttemperatur in 2 m Höhe in °C</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Monat</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300706574</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1D_T2M: Tägliche Stationsmessungen der mittleren Lufttemperatur in 2 m Höhe in °C</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-31T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Tag</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300953614</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1D_T2M_N: Tägliche Stationsmessungen des Minimums der Lufttemperatur in 2 m Höhe in °C</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-31T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Minimum</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Tag</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300237454</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1D_T2M_X: Tägliche Stationsmessungen des Maximums der Lufttemperatur in 2 m Höhe in °C</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-31T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Maximum</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Tag</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300350990</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1Y_T2M: Jahresmittel der Stationsmessungen der Lufttemperatur in 2 m Höhe in °C</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1982-01-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-01-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Jahr</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+          </wmdscl:dataProcessingAndReporting>
+        </wmdscl:observedVariableInfo>
+        <wmdscl:observedVariableInfo>Temperatur / Feuchte<gocl:instrument>
+            <gocl:instrumentInfo>
+              <gocl:instrumentModel>Psychrometerthermometer (trocken)</gocl:instrumentModel>
+              <gocl:observingMethod>Temperatur/Feuchtemessung, konv.</gocl:observingMethod>
+              <gocl:distanceFromReferenceSurface>2</gocl:distanceFromReferenceSurface>
+              <gocl:modDTFrom>1979-06-01T00:00:00</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-31T00:00:00</gocl:modDTUntil>
+            </gocl:instrumentInfo>
+            <gocl:instrumentInfo>
+              <gocl:instrumentModel>Psychrometerthermometer (feucht)</gocl:instrumentModel>
+              <gocl:observingMethod>Temperatur/Feuchtemessung, konv.</gocl:observingMethod>
+              <gocl:distanceFromReferenceSurface>2</gocl:distanceFromReferenceSurface>
+              <gocl:modDTFrom>1979-06-01T00:00:00</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-31T00:00:00</gocl:modDTUntil>
+            </gocl:instrumentInfo>
+          </gocl:instrument>
+          <wmdscl:dataProcessingAndReporting>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300350990</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1Y_T2M: Jahresmittel der Stationsmessungen der Lufttemperatur in 2 m Höhe in °C</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1982-01-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-01-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Jahr</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300118926</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1D_RF: Tagesmittel der relativen Feuchte in 2 m Höhe in %</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-31T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Tag</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300706574</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1D_T2M: Tägliche Stationsmessungen der mittleren Lufttemperatur in 2 m Höhe in °C</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-31T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Tag</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300933646</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1M_RF: Monatsmittel der Stationsmessungen der relativen Feuchte in 2 m Höhe in %</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Monat</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300701582</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1Y_RF: Jahresmittel der Stationsmessungen der relativen Feuchte in 2 m Höhe in %</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1982-01-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-01-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Jahr</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300624846</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1M_T2M: Monatsmittel der Stationsmessungen der Lufttemperatur in 2 m Höhe in °C</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Monat</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+          </wmdscl:dataProcessingAndReporting>
+        </wmdscl:observedVariableInfo>
+        <wmdscl:observedVariableInfo>Wind<gocl:instrument>
+            <gocl:instrumentInfo>
+              <gocl:instrumentModel>Windregistriergerät nach WOELFLE</gocl:instrumentModel>
+              <gocl:observingMethod>Windmessung, mechanisch</gocl:observingMethod>
+              <gocl:distanceFromReferenceSurface>6</gocl:distanceFromReferenceSurface>
+              <gocl:modDTFrom>1979-06-01T00:00:00</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-11-30T00:00:00</gocl:modDTUntil>
+            </gocl:instrumentInfo>
+          </gocl:instrument>
+          <wmdscl:dataProcessingAndReporting>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300103950</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1M_F-K: Monatsmittel der Stationsmessungen der Windstärke in Bft</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Monat</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300088974</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_PT1H_F: Stundenmittel der Stationsmessungen der Windgeschwindigkeit in ca. 10 m Höhe in m/s</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1979-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-11-30T23:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Stunde</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300289230</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1Y_F-K: Jahresmittel der Stationsmessungen der Windstärke in Bft</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1982-01-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-01-01T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Jahr</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300825102</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>FMK_MN004: Tägliche Stationsdaten Windstaerke Beaufort (Tagesmittel) in bft</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-12-31T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Tag</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300501326</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1D_F: Tagesmittel der Stationsmessungen der mittleren Windgeschwindigkeit in ca. 10 m Höhe in m/s</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1979-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-11-30T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Tag</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300795150</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_PT1H_D: Stundenmittel der Stationsmessungen der Windrichtung in ca. 10 m Höhe in Grad</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1979-06-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1990-11-30T23:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Stunde</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+          </wmdscl:dataProcessingAndReporting>
+        </wmdscl:observedVariableInfo>
+      </wmdscl:observedVariable>
+    </go:observationInfo>
+  </go:observation>
+</go:station>

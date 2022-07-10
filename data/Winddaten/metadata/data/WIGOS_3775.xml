@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<go:station xmlns:go="http://meteoswiss.ch/oscar/xsd/go" xmlns:wmdscl="http://meteoswiss.ch/oscar/xsd/wmdscl" xmlns:gocl="http://meteoswiss.ch/oscar/xsd/gocl" xmlns:dwdcdc="http://dwd.de/cdc/xsd/mesa">
+  <go:StationInfo>
+    <go:StationID>812301001966</go:StationID>
+    <go:wigosID>0-20000-0-3775</go:wigosID>
+    <go:stationName>Offenbach/Main (Zentrallabor)</go:stationName>
+    <go:stationLongitude>8.74683</go:stationLongitude>
+    <go:stationLatitude>50.10285</go:stationLatitude>
+    <go:stationElevation>100</go:stationElevation>
+    <wmdscl:siteInformation/>
+    <wmdscl:country>3-02-68</wmdscl:country>
+    <wmdscl:wmoRegion>3-01- TODO</wmdscl:wmoRegion>
+    <wmdscl:dateEstablished>1958-01-01T00:00:00</wmdscl:dateEstablished>
+    <wmdscl:dateClosed>...</wmdscl:dateClosed>
+  </go:StationInfo>
+  <wmdscl:event>
+    <wmdscl:eventInfo>
+      <gocl:modDTFrom>1958-01-01T00:00:00</gocl:modDTFrom>
+      <gocl:modDTUntil>1979-11-30T00:00:00</gocl:modDTUntil>
+      <go:stationLatitude>50.1167</go:stationLatitude>
+      <go:stationLongitude>8.7333</go:stationLongitude>
+      <go:stationElevation>98</go:stationElevation>
+      <wmdscl:siteInformation>unklar, Tagesdaten ab 1.1.79 könnten von der Frankfurter Str. stammen oder auch vom Kaiserlei !?</wmdscl:siteInformation>
+    </wmdscl:eventInfo>
+    <wmdscl:eventInfo>
+      <gocl:modDTFrom>1979-12-01T00:00:00</gocl:modDTFrom>
+      <gocl:modDTUntil>2008-07-14T00:00:00</gocl:modDTUntil>
+      <go:stationLatitude>50.107993</go:stationLatitude>
+      <go:stationLongitude>8.73449</go:stationLongitude>
+      <go:stationElevation>98</go:stationElevation>
+      <wmdscl:siteInformation>Die Station liegt im ebenen Maintal auf dem Gelände der  Zentrale des DWD am W-Rand von Offenbach etwa 200 m W vom Kaiserleikreisel.</wmdscl:siteInformation>
+    </wmdscl:eventInfo>
+    <wmdscl:eventInfo>
+      <gocl:modDTFrom>2009-06-09T00:00:00</gocl:modDTFrom>
+      <gocl:modDTUntil>...</gocl:modDTUntil>
+      <go:stationLatitude>50.10285</go:stationLatitude>
+      <go:stationLongitude>8.74683</go:stationLongitude>
+      <go:stationElevation>100</go:stationElevation>
+      <wmdscl:siteInformation>Die Station liegt im ebenen Maintal auf dem Gelände der  Zentrale des DWD.</wmdscl:siteInformation>
+    </wmdscl:eventInfo>
+  </wmdscl:event>
+  <go:observation>
+    <go:observationInfo>
+      <wmdscl:observedVariable>
+        <wmdscl:observedVariableInfo>etc.<gocl:instrument/>
+          <wmdscl:dataProcessingAndReporting>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300382798</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1D_F_X: Tägliche Stationsmessungen der maximalen Windspitze in ca. 10 m Höhe in m/s</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1978-01-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1998-12-15T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Maximum</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Tag</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>838433674739</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_PT10M_F_MX: 10-minütige Stationsmessungen der maximalen mittleren Windgeschwindigkeit in ca. 10 m Höhe in m/s</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>2003-09-11T08:20:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2006-02-13T10:40:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Maximum</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>10 Minuten</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300943630</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_PT1H_P: Stündliche Stationsmessungen des Luftdruckes reduziert auf Meereshöhe in hPa</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1958-01-01T06:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2001-08-16T06:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Instantan:Instantan oder Messwert für den das Zeitintervall nicht weiter aufgelöst werden kann</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Stunde</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300634830</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_PT1H_N: Stündliche Stationsmessungen des Bedeckungsgrades in Achtel</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1958-01-01T06:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2001-08-16T06:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Instantan:Instantan oder Messwert für den das Zeitintervall nicht weiter aufgelöst werden kann</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Stunde</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+          </wmdscl:dataProcessingAndReporting>
+        </wmdscl:observedVariableInfo>
+        <wmdscl:observedVariableInfo>Feuchte<gocl:instrument/>
+          <wmdscl:dataProcessingAndReporting>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300165710</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_PT1H_TD: Stündliche Stationsmessungen der Taupunkttemperatur in 2 m Höhe in °C</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1958-01-01T06:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2001-08-16T06:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Stunde</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300696590</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>UU_MN008: Stündliche Stationsdaten Relative Feuchte in % (2 m Höhe)</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1958-01-01T06:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2001-08-16T06:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Instantan:Instantan oder Messwert für den das Zeitintervall nicht weiter aufgelöst werden kann</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Stunde</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+          </wmdscl:dataProcessingAndReporting>
+        </wmdscl:observedVariableInfo>
+        <wmdscl:observedVariableInfo>Luftdruck<gocl:instrument/>
+          <wmdscl:dataProcessingAndReporting>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300649806</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_PT1H_P0: Stündliche Stationsmessungen des Luftdruckes auf Stationshöhe in hPa</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1987-11-02T18:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2001-08-16T06:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Instantan:Instantan oder Messwert für den das Zeitintervall nicht weiter aufgelöst werden kann</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Stunde</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+          </wmdscl:dataProcessingAndReporting>
+        </wmdscl:observedVariableInfo>
+        <wmdscl:observedVariableInfo>Niederschlag<gocl:instrument/>
+          <wmdscl:dataProcessingAndReporting>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300284238</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>SH_MN008: Terminwerte der Stationsmessungen der Schneehöhe in cm</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1958-01-20T06:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2001-03-28T06:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Instantan:Instantan oder Messwert für den das Zeitintervall nicht weiter aufgelöst werden kann</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Stunde</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+          </wmdscl:dataProcessingAndReporting>
+        </wmdscl:observedVariableInfo>
+        <wmdscl:observedVariableInfo>Strahlung<gocl:instrument>
+            <gocl:instrumentInfo>
+              <gocl:instrumentModel>Sonnenscheinschreiber nach Campbell-Stokes</gocl:instrumentModel>
+              <gocl:observingMethod>Sonnenscheinregistrierung, konv.</gocl:observingMethod>
+              <gocl:distanceFromReferenceSurface>55</gocl:distanceFromReferenceSurface>
+              <gocl:modDTFrom>1979-12-01T00:00:00</gocl:modDTFrom>
+              <gocl:modDTUntil>2008-07-14T00:00:00</gocl:modDTUntil>
+            </gocl:instrumentInfo>
+          </gocl:instrument>
+          <wmdscl:dataProcessingAndReporting>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300083982</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>SD_MN007: Tägliche Stationsdaten Strahlung und Sonnenscheindauer in Stunden</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-02-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2002-06-30T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Summe</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Tag</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300778318</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_PT1H_SD: Stündliche Stationsmessungen der Sonnenscheindauer in Minuten</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1981-02-01T03:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2002-06-30T20:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Summe</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Stunde</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300711566</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>SD_SY_MN008: 3 Terminwerte, über den Tag verteilt Stationsdaten Sonnenscheindauer in Stunden</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1999-04-26T18:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2001-08-16T06:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Summe</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Stunde</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+          </wmdscl:dataProcessingAndReporting>
+        </wmdscl:observedVariableInfo>
+        <wmdscl:observedVariableInfo>Temperatur (Luft)<gocl:instrument>
+            <gocl:instrumentInfo>
+              <gocl:instrumentModel>Minimumthermometer</gocl:instrumentModel>
+              <gocl:observingMethod>Temperaturmessung, konv.</gocl:observingMethod>
+              <gocl:distanceFromReferenceSurface>.05</gocl:distanceFromReferenceSurface>
+              <gocl:modDTFrom>1979-12-01T00:00:00</gocl:modDTFrom>
+              <gocl:modDTUntil>2008-07-14T00:00:00</gocl:modDTUntil>
+            </gocl:instrumentInfo>
+          </gocl:instrument>
+          <wmdscl:dataProcessingAndReporting>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300459534</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>TT_MN008: Stündliche Stationsdaten Lufttemperatur in °C (2 m Höhe)</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1958-01-01T06:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2001-08-16T06:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Instantan:Instantan oder Messwert für den das Zeitintervall nicht weiter aufgelöst werden kann</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Stunde</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+          </wmdscl:dataProcessingAndReporting>
+        </wmdscl:observedVariableInfo>
+        <wmdscl:observedVariableInfo>Temperatur / Feuchte<gocl:instrument/>
+          <wmdscl:dataProcessingAndReporting>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300459534</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>TT_MN008: Stündliche Stationsdaten Lufttemperatur in °C (2 m Höhe)</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1958-01-01T06:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2001-08-16T06:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Instantan:Instantan oder Messwert für den das Zeitintervall nicht weiter aufgelöst werden kann</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Stunde</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300696590</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>UU_MN008: Stündliche Stationsdaten Relative Feuchte in % (2 m Höhe)</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1958-01-01T06:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2001-08-16T06:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Instantan:Instantan oder Messwert für den das Zeitintervall nicht weiter aufgelöst werden kann</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Stunde</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+          </wmdscl:dataProcessingAndReporting>
+        </wmdscl:observedVariableInfo>
+        <wmdscl:observedVariableInfo>Wind<gocl:instrument>
+            <gocl:instrumentInfo>
+              <gocl:instrumentModel>Windrichtungssensor Classic 4.3121</gocl:instrumentModel>
+              <gocl:observingMethod>Windmessung, elektr.</gocl:observingMethod>
+              <gocl:distanceFromReferenceSurface>67</gocl:distanceFromReferenceSurface>
+              <gocl:modDTFrom>1979-12-01T00:00:00</gocl:modDTFrom>
+              <gocl:modDTUntil>2008-07-14T00:00:00</gocl:modDTUntil>
+            </gocl:instrumentInfo>
+            <gocl:instrumentInfo>
+              <gocl:instrumentModel>Windsensor Classic 4.3303</gocl:instrumentModel>
+              <gocl:observingMethod>Windmessung, elektr.</gocl:observingMethod>
+              <gocl:distanceFromReferenceSurface>67</gocl:distanceFromReferenceSurface>
+              <gocl:modDTFrom>1979-12-01T00:00:00</gocl:modDTFrom>
+              <gocl:modDTUntil>2008-07-14T00:00:00</gocl:modDTUntil>
+            </gocl:instrumentInfo>
+          </gocl:instrument>
+          <wmdscl:dataProcessingAndReporting>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300795150</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_PT1H_D: Stundenmittel der Stationsmessungen der Windrichtung in ca. 10 m Höhe in Grad</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1978-01-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1998-12-16T09:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Stunde</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300501326</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_P1D_F: Tagesmittel der Stationsmessungen der mittleren Windgeschwindigkeit in ca. 10 m Höhe in m/s</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1978-01-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1998-12-15T00:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Tag</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>2471774330</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_PT10M_F_X: 10-minütige Stationsmessungen der maximalen Windspitze in ca. 10 m Höhe in m/s</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>2003-09-11T08:20:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2006-02-13T10:40:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Maximum</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>10 Minuten</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>964802183515</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_PT10M_F: 10-minütige Stationsmessungen der mittleren Windgeschwindigkeit in ca. 10 m Höhe in m/s</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>2003-09-11T08:20:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2006-02-13T10:40:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>10 Minuten</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300047182</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_PT1H_DD: Stündliche Stationsmessungen der Windrichtung in ca. 10 m Höhe in Grad</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1958-01-01T06:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2001-08-16T06:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Stunde</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>467608380915</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_PT10M_F_MN: 10-minütige Stationsmessungen der minimalen mittleren Windgeschwindigkeit in ca. 10 m Höhe in m/s</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>2003-09-11T08:20:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2006-02-13T10:40:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Minimum</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>10 Minuten</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300088974</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_PT1H_F: Stundenmittel der Stationsmessungen der Windgeschwindigkeit in ca. 10 m Höhe in m/s</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1978-01-01T00:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>1998-12-16T09:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Stunde</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>209258968563</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_PT10M_D_X: 10-minütige Stationsmessungen der Windrichtung der höchsten Windspitze in ca. 10 m Höhe in Grad</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>2003-09-11T08:20:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2006-03-21T11:20:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Instantan:Instantan oder Messwert für den das Zeitintervall nicht weiter aufgelöst werden kann</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>10 Minuten</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>432300753358</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_PT1H_FF: Stündliche Stationsmessungen der Windgeschwindigkeit in ca. 10 m Höhe in m/s</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>1958-01-01T06:00:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2001-08-16T06:00:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>1 Stunde</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+            <wmdscl:dataProcessingAndReportingInfo>
+              <dwdcdc:mezaId>423472257704</dwdcdc:mezaId>
+              <dwdcdc:mezaDescription>OBS_DEU_PT10M_D: 10-minütige Stationsmessungen der mittleren Windrichtung in ca. 10 m Höhe in Grad</dwdcdc:mezaDescription>
+              <gocl:modDTFrom>2003-09-11T08:20:00.000000</gocl:modDTFrom>
+              <gocl:modDTUntil>2006-03-21T11:20:00.000000</gocl:modDTUntil>
+              <wmdscl:processingMethod>Mittelwert</wmdscl:processingMethod>
+              <wmdscl:aggregationPeriod>10 Minuten</wmdscl:aggregationPeriod>
+              <wmdscl:referenceTime>undefined</wmdscl:referenceTime>
+              <wmdscl:referenceDate>undefined</wmdscl:referenceDate>
+            </wmdscl:dataProcessingAndReportingInfo>
+          </wmdscl:dataProcessingAndReporting>
+        </wmdscl:observedVariableInfo>
+      </wmdscl:observedVariable>
+    </go:observationInfo>
+  </go:observation>
+</go:station>

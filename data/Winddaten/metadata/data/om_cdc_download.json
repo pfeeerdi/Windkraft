@@ -1,0 +1,111 @@
+{
+  "id" : "987d73a6-75cc-4173-9e17-21a69fc5a0c7",
+  "type" : "Observation-Collection",
+  "href" : "https://cdc.dwd.de/portal/shortlink/987d73a6-75cc-4173-9e17-21a69fc5a0c7",
+  "member" : [ {
+    "id" : "OBS_DEU_P1D_F",
+    "type" : "Observation",
+    "phenomenonTime" : {
+      "timePeriod" : {
+        "beginPosition" : "2020-01-01",
+        "endPosition" : "2022-01-01"
+      }
+    },
+    "procedure" : {
+      "id" : "OBS_DEU_P1D_F",
+      "uuid" : "432300501326",
+      "href" : "urn:x-wmo:md:de.dwd.cdc::OBS_DEU_P1D_F",
+      "title" : "Daily mean of station observations of wind speed at ca. 10 m above ground in m/s",
+      "uom" : "m/s"
+    },
+    "featureOfInterest" : {
+      "type" : "DataArray",
+      "count" : 441,
+      "record" : {
+        "encoding" : {
+          "blockSeparator" : "newline",
+          "tokenSeparator" : ",",
+          "tokenEnclosing" : "\"",
+          "decimalSign" : "."
+        },
+        "fields" : [ {
+          "ix" : 1,
+          "name" : "SDO_ID",
+          "type" : "string"
+        }, {
+          "ix" : 2,
+          "name" : "SDO_Name",
+          "type" : "string"
+        }, {
+          "ix" : 3,
+          "name" : "Geogr_Laenge",
+          "type" : "double"
+        }, {
+          "ix" : 4,
+          "name" : "Geogr_Breite",
+          "type" : "double"
+        }, {
+          "ix" : 5,
+          "name" : "Hoehe_ueber_NN",
+          "type" : "double"
+        }, {
+          "ix" : 6,
+          "name" : "Metadata_Link",
+          "type" : "string"
+        } ]
+      },
+      "values" : {
+        "href" : "data/sdo_OBS_DEU_P1D_F.csv"
+      }
+    },
+    "result" : {
+      "type" : "DataArray",
+      "count" : 205738,
+      "record" : {
+        "fields" : [ {
+          "ix" : 1,
+          "name" : "Produkt_Code",
+          "type" : "string",
+          "description" : "reference to procedure.id"
+        }, {
+          "ix" : 2,
+          "name" : "SDO_ID",
+          "type" : "string",
+          "description" : "reference to featureOfInterest.id"
+        }, {
+          "ix" : 3,
+          "name" : "Zeitstempel",
+          "type" : "datetime",
+          "uom" : {
+            "href" : "http://www.opengis.net/def/uom/ISO-8601/0/Gregorian",
+            "title" : ""
+          }
+        }, {
+          "ix" : 4,
+          "name" : "Wert",
+          "type" : "double",
+          "description" : "value of the procedure at specified point in time in the procuedure.uom"
+        }, {
+          "ix" : 5,
+          "name" : "Qualitaet_Niveau",
+          "type" : "string",
+          "uom" : {
+            "href" : "https://cdc.dwd.de/skos/taxon/qs/Qualitaetsniveau",
+            "title" : ""
+          }
+        }, {
+          "ix" : 6,
+          "name" : "Qualitaet_Byte",
+          "type" : "string",
+          "uom" : {
+            "href" : "https://cdc.dwd.de/skos/taxon/qs/Qualitaetsbyte",
+            "title" : ""
+          }
+        } ]
+      },
+      "values" : {
+        "href" : "data/data_OBS_DEU_P1D_F.csv"
+      }
+    }
+  } ]
+}
